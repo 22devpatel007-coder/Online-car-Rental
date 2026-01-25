@@ -1,0 +1,589 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f7f6;
+    color: #333;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Header & Nav */
+.main-header {
+    background: #fff;
+    padding: 1rem 5%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* width: 100%; */
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #1e3a8a;
+}
+
+.logo-icon {
+    margin-right: 5px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: #666;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #2563eb;
+}
+
+.btn-login {
+    color: #666;
+    margin-right: 15px;
+    font-weight: 600;
+}
+
+.btn-join {
+    background: #2563eb;
+    color: #fff;
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn-join:hover {
+    background: #1e3a8a;
+}
+
+/* Hero Section */
+.hero {
+    /* background-color: #000000; */
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    padding: 0 10%;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.highlight {
+    color: #2563eb;
+}
+
+.hero-content p {
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin: 0 auto 30px;
+}
+
+.hero-btns {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.btn-primary {
+    background: #2563eb;
+    color: #fff;
+    padding: 12px 30px;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+.btn-secondary {
+    background: #fff;
+    color: #333;
+    padding: 12px 30px;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+/* Features */
+.features {
+    padding: 80px 10%;
+    text-align: center;
+}
+
+.features h2 {
+    margin-bottom: 50px;
+    font-size: 2rem;
+    color: #1e3a8a;
+}
+
+.feature-grid {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+.feature-card {
+    background: #fff;
+    padding: 40px 20px;
+    border-radius: 10px;
+    flex: 1;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.icon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+/* CTA Banner */
+.cta-banner {
+    background: #2563eb;
+    color: #fff;
+    padding: 40px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-white {
+    background: #fff;
+    color: #2563eb;
+    padding: 12px 30px;
+    border-radius: 5px;
+    font-weight: 700;
+}
+
+/* Footer */
+.main-footer {
+    background: #111;
+    color: #777;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.8rem;
+}
+
+/* Auth Container (Login/Signup) */
+.auth-container {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+}
+
+.auth-box {
+    background: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+}
+
+.auth-box h2 {
+    margin-bottom: 10px;
+    color: #1e3a8a;
+}
+
+.auth-box p {
+    color: #666;
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+}
+
+.auth-box input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+}
+
+.auth-box .btn-primary {
+    width: 100%;
+    cursor: pointer;
+    border: none;
+}
+
+.auth-footer {
+    margin-top: 20px;
+    font-size: 0.85rem;
+}
+
+.auth-footer a {
+    color: #2563eb;
+    font-weight: 600;
+}
+/* --- CONTACT FORM SPECIFIC --- */
+/* --- 1. CENTER THE CARD (Wrapper) --- */
+.auth-wrapper {
+    min-height: 80vh; /* Takes up most of the screen height */
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    background-color: #fff; /* Dark background to match your site */
+    padding: 20px;
+}
+
+/* --- 2. THE CARD DESIGN (Like the Screenshot) --- */
+.auth-card {
+    background-color: #fff; /* Dark card color */
+    width: 100%;
+    max-width: 450px; /* Limits width so it looks like a card */
+    padding: 40px;
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);/* Soft shadow depth */
+    text-align: center; /* Centers the heading */
+}
+
+/* Typography inside card */
+.auth-card h2 {
+    margin-bottom: 10px;
+    color: black;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.auth-card p {
+    color: #000000;
+    margin-bottom: 30px;
+    font-size: 0.95rem;
+}
+
+/* --- 3. INPUT FIELDS (Form Control) --- */
+.form-group {
+    margin-bottom: 20px;
+    text-align: left; /* Labels align left */
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #ccc;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.form-control {
+    width: 100%;
+    padding: 12px 15px;
+    background-color: #fff; /* Slightly lighter than card */
+    border: 1px solid #ddd;
+    border-radius: 6px; /* Smooth rounded corners */
+    color: black;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+/* .form-control:focus {
+    outline: none;
+    border-color: #007bff; 
+    background-color: #333;
+} */
+
+/* Fix for Textarea resizing */
+textarea.form-control {
+    resize: vertical; /* User can only resize height */
+    min-height: 120px;
+}
+
+/* --- 4. BUTTONS --- */
+.btn {
+    display: inline-block;
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid transparent;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border-radius: 6px;
+    transition: background-color 0.3s;
+}
+
+.btn-primary {
+    background-color: #007bff; /* DriveEasy Blue */
+    color: white;
+    width: 15%; /* Makes button full width like screenshot */
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* --- 5. ALERTS (Success/Error Messages) --- */
+.alert {
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    text-align: left;
+}
+
+.auth-footer {
+    margin-top: 25px;
+    color: #666;
+    font-size: 0.9rem;
+}
+/* --- CAR DETAIL PAGE --- */
+
+/* zerox */
+.detail-container {
+    padding: 40px 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.detail-card {
+    background-color: #1a1a1a;
+    border-radius: 12px;
+    overflow: hidden; /* Keeps image inside corners */
+    display: flex; /* Side-by-side layout */
+    box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+    border: 1px solid #333;
+}
+
+.detail-image {
+    flex: 1; /* Takes 50% width */
+    min-height: 400px;
+}
+
+.detail-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures image covers area without stretching */
+}
+
+.detail-info {
+    flex: 1; /* Takes 50% width */
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.detail-info h2 {
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.detail-price {
+    font-size: 1.5rem;
+    color: #007bff; /* Primary Blue */
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+/* Specs Grid (Fuel, Seats, etc) */
+.specs-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 items per row */
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.spec-item {
+    background: #252525;
+    padding: 15px;
+    border-radius: 8px;
+    color: #ccc;
+    font-size: 0.95rem;
+    border: 1px solid #333;
+}
+
+.spec-item strong {
+    display: block;
+    color: white;
+    margin-bottom: 5px;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    opacity: 0.7;
+}
+
+/* Buttons Container */
+.action-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: auto; /* Pushes buttons to bottom */
+}
+
+
+/* =========================================
+   RESPONSIVE MEDIA QUERIES
+   ========================================= */
+
+/* Tablets and below (max-width: 1024px) */
+@media screen and (max-width: 1024px) {
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+    
+    .features {
+        padding: 60px 5%;
+    }
+    
+    .feature-grid {
+        gap: 20px;
+    }
+}
+
+/* Tablets Portrait and Large Phones (max-width: 768px) */
+@media screen and (max-width: 768px) {
+    /* Navbar */
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    /* Hero Section */
+    .hero {
+        height: auto;
+        padding: 100px 5%;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-btns {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* Features Section */
+    .feature-grid {
+        flex-direction: column;
+    }
+
+    .feature-card {
+        margin-bottom: 20px;
+    }
+
+    /* CTA Banner */
+    .cta-banner {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    /* Auth Pages */
+    .auth-wrapper, .auth-container {
+        padding: 20px;
+        height: auto;
+        min-height: 80vh;
+    }
+
+    .auth-card, .auth-box {
+        padding: 30px 20px;
+    }
+
+    /* Car Detail Page */
+    .detail-card {
+        flex-direction: column;
+    }
+
+    .detail-image {
+        min-height: 250px;
+        max-height: 350px;
+    }
+
+    .detail-info {
+        padding: 25px;
+    }
+
+    .detail-info h2 {
+        font-size: 1.8rem;
+    }
+}
+
+/* Mobile Phones (max-width: 480px) */
+@media screen and (max-width: 480px) {
+    /* Header */
+    .main-header {
+        padding: 1rem;
+    }
+
+    .nav-links {
+        display: flex; /* Consider adding a hamburger menu for this size */
+    }
+    
+    /* For now, just stacking nicely if menu isn't collapsed */
+    .nav-links.active {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    /* Hero */
+    .hero-content h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .btn-primary, .btn-secondary, .btn-white {
+        width: 100%;
+        padding: 12px 15px;
+    }
+
+    /* Features */
+    .features h2 {
+        font-size: 1.5rem;
+    }
+
+    /* Specs Grid in Details */
+    .specs-grid {
+        grid-template-columns: 1fr; /* 1 item per row */
+        gap: 10px;
+    }
+
+    /* Action Buttons in Details */
+    .action-buttons {
+        flex-direction: column;
+    }
+
+    /* Forms */
+    .btn-primary {
+        width: 100%; /* Ensure primary buttons are full width on mobile */
+    }
+}
