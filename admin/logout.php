@@ -1,1 +1,1 @@
-<?php session_start(); unset($_SESSION['admin_id']); header('Location: /online-car-rental/admin/login.php'); ?>
+<?php session_start(); unset($_SESSION['admin_id']); header('Location: /online-car-rental/login.php'); ?>

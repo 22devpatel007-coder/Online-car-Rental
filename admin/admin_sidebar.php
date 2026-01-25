@@ -93,5 +93,5 @@
         <a href="manage-user.php">Messages</a>
         <a href="users.php">Users</a>
         
-        <a href="../logout.php" class="logout-link">Logout</a>
+        <a href="logout.php" class="logout-link">Logout</a>
 </div>
