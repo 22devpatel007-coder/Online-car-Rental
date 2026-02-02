@@ -130,3 +130,4 @@ UPDATE users SET role = 'admin' WHERE email = 'admin@car.com';
 ALTER TABLE bookings ADD COLUMN location VARCHAR(255) NOT NULL AFTER car_id;
 ALTER TABLE bookings ADD COLUMN phone_number VARCHAR(20) NOT NULL AFTER location;
 ALTER TABLE bookings ADD COLUMN drop_location VARCHAR(255) NOT NULL AFTER location;
+

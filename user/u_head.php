@@ -22,7 +22,7 @@ if (session_status() === PHP_SESSION_NONE) session_start();
                 <li><a href="view-cars.php">CAR</a></li>
                 
                 <?php if (isset($_SESSION['user_id'])): ?>
-                    <li><a href="my_bookings.php">MY BOOKING</a></li>
+                    <li><a href="my-bookings.php">MY BOOKING</a></li>
                 <?php endif; ?>
                 
                 <li><a href="cart.php">MY CART</a></li>
